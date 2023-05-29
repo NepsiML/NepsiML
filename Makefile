@@ -1,8 +1,8 @@
-ACTIONS=`git status | grep -e deleted -e updated`
+ACTIONS=`git status | grep -e deleted -e modified`
 
 pull:
 	git pull
 push:
 	git add *
-	git commit -m "$USER-$ACTIONS"
+	git commit -m "${USER}-${ACTIONS}"
 	git push
