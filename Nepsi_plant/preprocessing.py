@@ -8,25 +8,56 @@ import re
 from os import walk
 
 
-for (dirpath, dirnames, filenames) in walk("."):
-    if '___' in dirpath:
-        print("Directory path: ", dirpath)
-        print("Folder name: ", dirnames)
-        #print('filenames: ', filenames)
+# for (dirpath, dirnames, filenames) in walk("."):
+#     if '___' in dirpath:
+#         print("Directory path: ", dirpath)
+#         print("Folder name: ", dirnames)
 
 
-# perform transformation before reading the dataset
-transform = transforms.Compose([transforms.Resize(255),
-                                 transforms.CenterCrop(224),
-                                 transforms.RandomHorizontalFlip(),
-                                 transforms.RandomRotation(30),
-                                 transforms.ToTensor()])
+def read_data(root_directory='.',
+              batch_size=32,
+              shuffle=True,
+              test=False)->torch.utils.data.dataloader.DataLoader:
+    '''
+    Read images from root directory.
+    The label associated with each image is the directory name.
+    
+    ------------------------------------------------------------
+    Returns:
+        Dataloader associated with root directory.
+    '''
+    # transformations to be applied to the dataset
+    transform = transforms.Compose([transforms.Resize(255),
+                                    transforms.CenterCrop(224),
+                                    transforms.RandomHorizontalFlip(),
+                                    transforms.RandomRotation(10),
+                                    transforms.ToTensor()])
 
-dataset = datasets.ImageFolder('new-plant-diseases-dataset', transform=transform)
+    # read images from folder
+    dataset = datasets.ImageFolder(root_directory, transform=transform)
+    # dataloader
+    return torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
 
-dataloader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
+def show_image(image:torch.tensor,
+              label:int,
+              cols=4):
+    '''
+    Given an image or a batch as a torch.tensor, show the image.
+    '''
+    # if single image
+    if len(image.shape) == 3:
+        plt.title(f"{label}", fontsize=14)
+        plt.imshow(torch.permute(image, dims=(1,2,0)))
+        plt.axis('off')
+        plt.show()
 
-iter_dataset = iter(dataloader)
+    # else if batch is passed
+    elif len(image.shape) == 4:
+        batch_size = image.shape[0]
 
-batch_img, batch_labels = next(iter_dataset)
-print(batch_labels)
+        fig, axis = plt.subplots(int(np.ceil(batch_size/cols)), cols, sharex=True, sharey=True, figsize=(20,10))
+        for i in range(len(axis.ravel())):
+            axis.ravel()[i].imshow(torch.permute(image[i], dims=(1,2,0)))
+            axis.ravel()[i].axis('off')
+        plt.axis('off')
+        plt.show()

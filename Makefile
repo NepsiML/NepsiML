@@ -6,3 +6,4 @@ push:
 	git add *
 	git commit -m "${USER}-${ACTIONS}"
 	git push
+
