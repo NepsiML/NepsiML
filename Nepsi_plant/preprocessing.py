@@ -14,27 +14,32 @@ from os import walk
 #         print("Folder name: ", dirnames)
 
 
-def read_data(root_directory='.',
+def read_data(directory='.',
               batch_size=32,
               shuffle=True,
-              test=False)->torch.utils.data.dataloader.DataLoader:
+              test=False,
+              seed=1)->torch.utils.data.dataloader.DataLoader:
     '''
-    Read images from root directory.
+    Read images from directory.
     The label associated with each image is the directory name.
     
     ------------------------------------------------------------
     Returns:
-        Dataloader associated with root directory.
+        Dataloader associated with the directory.
     '''
+    # initialize random seed
+    torch.manual_seed(seed)
+
     # transformations to be applied to the dataset
-    transform = transforms.Compose([transforms.Resize(255),
-                                    transforms.CenterCrop(224),
+    transform = transforms.Compose([transforms.Resize(256),
+                                    #transforms.CenterCrop(224),
                                     transforms.RandomHorizontalFlip(),
                                     transforms.RandomRotation(10),
                                     transforms.ToTensor()])
 
     # read images from folder
-    dataset = datasets.ImageFolder(root_directory, transform=transform)
+    dataset = datasets.ImageFolder(directory, transform=transform)
+
     # dataloader
     return torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
 
