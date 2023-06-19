@@ -1,0 +1,214 @@
+Epoch: 0
+---------
+  0%|          | 0/2197 [00:00<?, ?it/s]Batch number: 0
+Train loss: 1.933
+Accuracy model: 0.406
+  5%|▍         | 100/2197 [00:50<17:02,  2.05it/s]Batch number: 100
+Train loss: 2.107
+Accuracy model: 0.389
+  9%|▉         | 200/2197 [01:41<15:18,  2.17it/s]Batch number: 200
+Train loss: 1.874
+Accuracy model: 0.446
+ 14%|█▎        | 300/2197 [02:35<14:36,  2.16it/s]Batch number: 300
+Train loss: 1.645
+Accuracy model: 0.512
+ 18%|█▊        | 400/2197 [03:30<14:11,  2.11it/s]Batch number: 400
+Train loss: 1.482
+Accuracy model: 0.558
+ 23%|██▎       | 500/2197 [04:23<13:59,  2.02it/s]Batch number: 500
+Train loss: 1.329
+Accuracy model: 0.601
+ 27%|██▋       | 601/2197 [05:18<18:41,  1.42it/s]Batch number: 600
+Train loss: 1.209
+Accuracy model: 0.636
+ 32%|███▏      | 700/2197 [06:09<14:09,  1.76it/s]Batch number: 700
+Train loss: 1.109
+Accuracy model: 0.665
+ 36%|███▋      | 800/2197 [07:01<11:20,  2.05it/s]Batch number: 800
+Train loss: 1.034
+Accuracy model: 0.686
+ 41%|████      | 900/2197 [07:53<10:32,  2.05it/s]Batch number: 900
+Train loss: 0.967
+Accuracy model: 0.706
+ 46%|████▌     | 1000/2197 [08:45<09:42,  2.05it/s]Batch number: 1000
+Train loss: 0.913
+Accuracy model: 0.722
+ 50%|█████     | 1100/2197 [09:36<11:00,  1.66it/s]Batch number: 1100
+Train loss: 0.864
+Accuracy model: 0.736
+ 55%|█████▍    | 1200/2197 [10:28<10:39,  1.56it/s]Batch number: 1200
+Train loss: 0.821
+Accuracy model: 0.748
+ 59%|█████▉    | 1300/2197 [11:19<09:18,  1.61it/s]Batch number: 1300
+Train loss: 0.785
+Accuracy model: 0.759
+ 64%|██████▎   | 1400/2197 [12:10<07:44,  1.72it/s]Batch number: 1400
+Train loss: 0.753
+Accuracy model: 0.768
+ 68%|██████▊   | 1500/2197 [13:00<05:22,  2.16it/s]Batch number: 1500
+Train loss: 0.723
+Accuracy model: 0.777
+ 73%|███████▎  | 1600/2197 [13:51<04:35,  2.17it/s]Batch number: 1600
+Train loss: 0.693
+Accuracy model: 0.786
+ 77%|███████▋  | 1700/2197 [14:44<04:10,  1.98it/s]Batch number: 1700
+Train loss: 0.670
+Accuracy model: 0.793
+ 82%|████████▏ | 1800/2197 [15:37<03:03,  2.16it/s]Batch number: 1800
+Train loss: 0.647
+Accuracy model: 0.800
+ 86%|████████▋ | 1900/2197 [16:29<02:17,  2.17it/s]Batch number: 1900
+Train loss: 0.627
+Accuracy model: 0.806
+ 91%|█████████ | 2000/2197 [17:20<01:30,  2.16it/s]Batch number: 2000
+Train loss: 0.608
+Accuracy model: 0.812
+ 96%|█████████▌| 2100/2197 [18:10<00:46,  2.11it/s]Batch number: 2100
+Train loss: 0.589
+Accuracy model: 0.817
+100%|██████████| 2197/2197 [18:59<00:00,  1.93it/s]
+Train loss: 0.57310 | Train accuracy: 0.82%
+Test loss: 0.43015 | Test accuracy: 0.86%
+
+Epoch: 1
+---------
+  0%|          | 0/2197 [00:00<?, ?it/s]Batch number: 0
+Train loss: 0.035
+Accuracy model: 1.000
+  5%|▍         | 100/2197 [00:50<16:06,  2.17it/s]Batch number: 100
+Train loss: 0.185
+Accuracy model: 0.941
+  9%|▉         | 200/2197 [01:42<15:23,  2.16it/s]Batch number: 200
+Train loss: 0.190
+Accuracy model: 0.941
+ 14%|█▎        | 300/2197 [02:34<14:38,  2.16it/s]Batch number: 300
+Train loss: 0.204
+Accuracy model: 0.936
+ 18%|█▊        | 400/2197 [03:26<13:50,  2.16it/s]Batch number: 400
+Train loss: 0.210
+Accuracy model: 0.934
+ 23%|██▎       | 500/2197 [04:18<13:06,  2.16it/s]Batch number: 500
+Train loss: 0.210
+Accuracy model: 0.933
+ 27%|██▋       | 600/2197 [05:10<12:19,  2.16it/s]Batch number: 600
+Train loss: 0.202
+Accuracy model: 0.936
+ 32%|███▏      | 700/2197 [06:00<11:33,  2.16it/s]Batch number: 700
+Train loss: 0.210
+Accuracy model: 0.934
+ 36%|███▋      | 800/2197 [06:50<11:01,  2.11it/s]Batch number: 800
+Train loss: 0.209
+Accuracy model: 0.934
+ 41%|████      | 900/2197 [07:41<14:41,  1.47it/s]Batch number: 900
+Train loss: 0.204
+Accuracy model: 0.936
+ 46%|████▌     | 1000/2197 [08:31<09:12,  2.17it/s]Batch number: 1000
+Train loss: 0.201
+Accuracy model: 0.936
+ 50%|█████     | 1100/2197 [09:23<08:26,  2.17it/s]Batch number: 1100
+Train loss: 0.203
+Accuracy model: 0.936
+ 55%|█████▍    | 1200/2197 [10:13<07:39,  2.17it/s]Batch number: 1200
+Train loss: 0.204
+Accuracy model: 0.935
+ 59%|█████▉    | 1300/2197 [11:05<06:54,  2.16it/s]Batch number: 1300
+Train loss: 0.204
+Accuracy model: 0.935
+ 64%|██████▎   | 1400/2197 [11:55<06:10,  2.15it/s]Batch number: 1400
+Train loss: 0.201
+Accuracy model: 0.936
+ 68%|██████▊   | 1500/2197 [12:48<05:24,  2.15it/s]Batch number: 1500
+Train loss: 0.202
+Accuracy model: 0.936
+ 73%|███████▎  | 1600/2197 [13:40<04:35,  2.16it/s]Batch number: 1600
+Train loss: 0.200
+Accuracy model: 0.936
+ 77%|███████▋  | 1700/2197 [14:31<03:51,  2.15it/s]Batch number: 1700
+Train loss: 0.199
+Accuracy model: 0.936
+ 82%|████████▏ | 1800/2197 [15:21<03:07,  2.12it/s]Batch number: 1800
+Train loss: 0.197
+Accuracy model: 0.938
+ 86%|████████▋ | 1900/2197 [16:11<02:22,  2.09it/s]Batch number: 1900
+Train loss: 0.194
+Accuracy model: 0.938
+ 91%|█████████ | 2000/2197 [17:02<02:06,  1.56it/s]Batch number: 2000
+Train loss: 0.193
+Accuracy model: 0.938
+ 96%|█████████▌| 2100/2197 [17:54<00:52,  1.85it/s]Batch number: 2100
+Train loss: 0.192
+Accuracy model: 0.939
+100%|██████████| 2197/2197 [18:42<00:00,  1.96it/s]
+Train loss: 0.19016 | Train accuracy: 0.94%
+Test loss: 0.30856 | Test accuracy: 0.91%
+
+Epoch: 2
+---------
+  0%|          | 0/2197 [00:00<?, ?it/s]Batch number: 0
+Train loss: 0.108
+Accuracy model: 0.969
+  5%|▍         | 100/2197 [00:49<18:26,  1.89it/s]Batch number: 100
+Train loss: 0.131
+Accuracy model: 0.956
+  9%|▉         | 200/2197 [01:40<24:38,  1.35it/s]Batch number: 200
+Train loss: 0.138
+Accuracy model: 0.953
+ 14%|█▎        | 300/2197 [02:29<14:36,  2.16it/s]Batch number: 300
+Train loss: 0.133
+Accuracy model: 0.955
+ 18%|█▊        | 400/2197 [03:18<13:52,  2.16it/s]Batch number: 400
+Train loss: 0.147
+Accuracy model: 0.951
+ 23%|██▎       | 500/2197 [04:07<14:09,  2.00it/s]Batch number: 500
+Train loss: 0.152
+Accuracy model: 0.950
+ 27%|██▋       | 600/2197 [04:58<17:45,  1.50it/s]Batch number: 600
+Train loss: 0.149
+Accuracy model: 0.951
+ 32%|███▏      | 700/2197 [05:47<11:31,  2.16it/s]Batch number: 700
+Train loss: 0.144
+Accuracy model: 0.953
+ 36%|███▋      | 800/2197 [06:37<10:42,  2.18it/s]Batch number: 800
+Train loss: 0.145
+Accuracy model: 0.953
+ 41%|████      | 900/2197 [07:27<10:00,  2.16it/s]Batch number: 900
+Train loss: 0.145
+Accuracy model: 0.953
+ 46%|████▌     | 1000/2197 [08:16<09:47,  2.04it/s]Batch number: 1000
+Train loss: 0.146
+Accuracy model: 0.953
+ 50%|█████     | 1100/2197 [09:07<11:08,  1.64it/s]Batch number: 1100
+Train loss: 0.146
+Accuracy model: 0.953
+ 55%|█████▍    | 1200/2197 [09:56<07:39,  2.17it/s]Batch number: 1200
+Train loss: 0.146
+Accuracy model: 0.953
+ 59%|█████▉    | 1300/2197 [10:44<06:59,  2.14it/s]Batch number: 1300
+Train loss: 0.145
+Accuracy model: 0.954
+ 64%|██████▎   | 1400/2197 [11:35<06:31,  2.03it/s]Batch number: 1400
+Train loss: 0.142
+Accuracy model: 0.955
+ 68%|██████▊   | 1500/2197 [12:25<08:59,  1.29it/s]Batch number: 1500
+Train loss: 0.142
+Accuracy model: 0.955
+ 73%|███████▎  | 1600/2197 [13:13<04:34,  2.18it/s]Batch number: 1600
+Train loss: 0.142
+Accuracy model: 0.955
+ 77%|███████▋  | 1700/2197 [14:04<03:49,  2.16it/s]Batch number: 1700
+Train loss: 0.142
+Accuracy model: 0.955
+ 82%|████████▏ | 1800/2197 [14:55<03:04,  2.15it/s]Batch number: 1800
+Train loss: 0.141
+Accuracy model: 0.955
+ 86%|████████▋ | 1900/2197 [15:47<02:18,  2.14it/s]Batch number: 1900
+Train loss: 0.141
+Accuracy model: 0.955
+ 91%|█████████ | 2000/2197 [16:36<01:39,  1.99it/s]Batch number: 2000
+Train loss: 0.140
+Accuracy model: 0.955
+ 96%|█████████▌| 2100/2197 [17:28<01:16,  1.26it/s]Batch number: 2100
+Train loss: 0.140
+Accuracy model: 0.956
+100%|██████████| 2197/2197 [18:18<00:00,  2.00it/s]
+Train loss: 0.13950 | Train accuracy: 0.96%
